@@ -1,16 +1,19 @@
-
 {
   "manifest_version": 3,
   "name": "Ehatsify",
   "version": "1.0.0",
-  "description": "An extension that makes every image on roblox.com an ehat.",
+  "permissions": [
+    "activeTab",
+    "declarativeNetRequest"
+  ],
+  "description": "An extension that has a chance to make every image on roblox.com an ehat.",
   "icons": {
     "128": "images/icon128.png"
   },
   "content_scripts": [
     {
       "matches": ["https://www.roblox.com/*"],
-      "js": ["Content.js"]
+      "js": ["content.js"]
     }
   ]
 }
